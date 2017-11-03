@@ -47,10 +47,10 @@ public class Controller {
         this.fis = new FileInputStream("src/sample/settings.properties");
         this.property.load(this.fis);
         String emailPr;
-        emailPr = this.property.getProperty("db.email", "skosinka@yandex.ru1");
+        emailPr = this.property.getProperty("db.email", "skosinka@yandex.ru");
         String email = "skosinka@yandex.ru";
         System.out.println("Send... " + emailPr);
-        SendEmail sendEmail = new SendEmail(emailPr, "test");
+        SendEmail sendEmail = new SendEmail("skosinka@yandex.ru", "test");
         sendEmail.sendMessage("Test");
         this.fis.close();
     }
@@ -68,7 +68,7 @@ public class Controller {
         this.fis = new FileInputStream("src/sample/settings.properties");
         this.property.load(this.fis);
         this.property.setProperty("db.email", email);
-        this.NoteTextField.setText(email);
+        this.NoteTextField.setText("1");
         this.fis.close();
     }
 }

@@ -4,11 +4,11 @@
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="sample.Main" />
-        <option name="description" value="" />
+        <option name="description" value="Test" />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="" />
-        <option name="vendor" value="" />
-        <option name="version" value="" />
+        <option name="title" value="Test" />
+        <option name="vendor" value="Test" />
+        <option name="version" value="1" />
       </options>
     </properties>
     <root id="root">
